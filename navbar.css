@@ -1,0 +1,120 @@
+
+@media (max-width: 314px) {
+  
+    .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+    }
+  
+  }
+  
+  @media (max-width: 1280px) {
+  
+  
+    nav ul li a {
+      font-size: 16px;
+    }
+  }
+  
+  
+  /* Media queries for smaller screens */
+  @media (max-width: 1024px) {
+  
+  
+    nav ul li a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 858px) {
+    .checkbtn {
+      display: block;
+      /* Show hamburger menu */
+    }
+  
+    ul {
+      position: fixed;
+      width: fit-content;
+      height: fit-content;
+      opacity: 0.9;
+      background: tomato;
+      font-weight: bold;
+      top: 80px;
+      left: -100%;
+      /* Hide offscreen */
+      text-align: center;
+      transition: all 0.5s;
+      z-index: 1000;
+      /* Ensure it's above other elements */
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+  
+    nav ul li a {
+      font-size: 20px;
+      color: white;
+    }
+  
+    #check:checked~ul {
+      left: 0;
+      /* Show the menu when checked */
+    }
+  
+  
+  }
+  
+  /* Responsiveness */
+  /* Medium Screen + Tablet */
+  @media (max-width: 1000px) {
+    #navbar img {
+      margin-left: 20px;
+    }
+  
+    nav ul {
+      margin-right: 20px;
+    }
+  
+    nav ul li a {
+      padding: 10px;
+    }
+  
+    header .content h1 {
+      font-size: 28px;
+    }
+  
+   
+  
+    /* Mobile Devices */
+    @media (max-width: 600px) {
+      #navbar {
+        flex-direction: column;
+      }
+  
+      #navbar img {
+        margin-bottom: 20px;
+      }
+  
+      header .content h1 {
+        font-size: 18px;
+      }
+  
+      header .content p {
+        font-size: 14px;
+      }
+  
+    }
+  }
+  
+  @media (max-width:768px) {
+    
+  }
+  
+ 
+  
+  
