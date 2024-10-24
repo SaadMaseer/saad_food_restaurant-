@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/ea6e1646c3.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="saad-ico.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbar.css">
-    <title>Contact</title>
+       <!-- Font Awesome for social media icons -->
+       <script src="https://kit.fontawesome.com/ea6e1646c3.js" crossorigin="anonymous"></script>
+       <link rel="shortcut icon" type="image/x-icon" href="saad-ico.ico">
+       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="navbar.css">
+    <title>Video</title>
 </head>
 <body>
     <header class="hed">
@@ -16,10 +17,22 @@
         </div>
     </header>
     <main>
-        
-     
+        <section class="test">
+            <div class="card">
+                <video autoplay loop>
+                    <source src="saad-food-video.mp4" type="video/mp4">
+                    <source src="saad_4.WebM" type="video/webm">
+                    Your browser does not support the video tag. 
+                </video>
+            </div>
+            <div class="card">
+                <h2>welcome to saad food</h2>
+            </div>
+          
 
-           <!-- contact starts -->
+        </section>
+
+               <!-- contact starts -->
        <section id="contact">
         <div class="container-contact">
             <div class="left-section">
@@ -39,7 +52,9 @@
 
             <div class="right-section">
                 <h2>Get in Touch</h2>
-                <form action="contact.php" method="POST">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="0e04ddd5-f4e8-4304-870f-8181cf413d5e">
+                    <input type="hidden" name="redirect" value="http://127.0.0.1:5501/thanks.html">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required placeholder="Enter your full name">
 
@@ -55,7 +70,7 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
 
-                    <button type="submit"><a href="Technical-Issues.html">Send Message</a></button>
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
 
@@ -72,5 +87,13 @@
         <div id="footer-container"></div>
     </footer>
     <script src="main.js"></script>
+    </main>
+     <!-- Footer section -->
+     <footer>
+        <!-- Footer content will be loaded here -->
+        <div id="footer-container"></div>
+    </footer>
+    <script src="main.js"></script>
+   
 </body>
 </html>
